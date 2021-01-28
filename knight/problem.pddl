@@ -1,10 +1,11 @@
-(define (problem problem_name) (:domain Kinght_tour)
+(define (problem problem_name) 
+(:domain Kinght_tour)
 (:objects n1 n2 n3 n4
 )
 
 (:init
-    (at n1 n1)
-    (visited n1 n1)
+    (at n1 n4)
+    (visited n1 n4)
     
     ;increase by one
 
@@ -30,11 +31,12 @@
 (:goal (and
     
     (visited n1 n1)
-    ;(visited n1 n2)
-    ;(visited n3 n3)
-    (visited n3 n4)
+    (visited n1 n2)
+    (visited n1 n3)
+    (visited n1 n4)
+    
+    ))
 
 
-))
 
 )
