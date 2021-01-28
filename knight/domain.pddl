@@ -1,6 +1,6 @@
 
 (define (domain Kinght_tour)
-(:requirements :strips :negative-preconditions)
+(:requirements :negative-preconditions)
 
 (:predicates 
     (at ?col ?row)
@@ -30,8 +30,8 @@
     :parameters (?from_col ?from_row ?to_col ?to_row)
     :precondition (and 
         (at ?from_col ?from_row)
-        (increase_one ?to_col ?to_row)
-        (increase_two ?to_col ?to_row)
+        (increase_two ?from_row ?to_row)
+        (increase_one ?from_col ?to_col)
         (not (visited ?to_col ?to_row))
     )
     :effect (and 
