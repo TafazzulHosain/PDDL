@@ -1,6 +1,6 @@
 ;Header and description
 
-(define (domain Line_haul)
+(define (domain Linehaul)
 
 ;remove requirements that are not needed
 (:requirements :strips :typing )
